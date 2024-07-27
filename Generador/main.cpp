@@ -49,7 +49,7 @@ int main(int argc, char* argv[]) {
     } else if (sizeArgument == "MEDIUM") {
         fileSizeInBytes = 1024 * 1024 * 1024; // 1 GB
     } else if (sizeArgument == "LARGE") {
-        fileSizeInBytes = 2 * 1024 * 1024 * 1024; // 2 GB
+        fileSizeInBytes = 2ull * 1024 * 1024 * 1024; // 2 GB
     } else {
         std::cerr << "Tamaño inválido. Use SMALL, MEDIUM o LARGE.\n";
         return 1;

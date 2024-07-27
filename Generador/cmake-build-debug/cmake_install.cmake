@@ -1,4 +1,4 @@
-# Install script for directory: /home/andy/CLionProjects/Generador
+# Install script for directory: /home/andy/CLionProjects/Tarea1Datos2/Generador
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andy/CLionProjects/Generador/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andy/CLionProjects/Tarea1Datos2/Generador/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

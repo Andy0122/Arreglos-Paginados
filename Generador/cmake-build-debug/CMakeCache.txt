@@ -224,6 +224,15 @@ Generador_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Generador_SOURCE_DIR:STATIC=/home/andy/CLionProjects/Tarea1Datos2/Generador
 
+//Value Computed by CMake
+generador_BINARY_DIR:STATIC=/home/andy/CLionProjects/Tarea1Datos2/Generador/cmake-build-debug
+
+//Value Computed by CMake
+generador_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+generador_SOURCE_DIR:STATIC=/home/andy/CLionProjects/Tarea1Datos2/Generador
+
 
 ########################
 # INTERNAL cache entries

@@ -44,7 +44,9 @@ int main(int argc, char* argv[]) {
     }
 
     // Determina el tamaño del archivo en bytes según el argumento proporcionado
-    if (sizeArgument == "SMALL") {
+    if (sizeArgument == "NANO") {
+        fileSizeInBytes = 2 * 1024 * 1024; // 2 MB
+    } else if (sizeArgument == "SMALL") {
         fileSizeInBytes = 512 * 1024 * 1024; // 512 MB
     } else if (sizeArgument == "MEDIUM") {
         fileSizeInBytes = 1024 * 1024 * 1024; // 1 GB

@@ -21,12 +21,12 @@ public:
     int& operator[](int index);
 
     // Métodos para obtener el número de page hits y page faults
-    int getPageHits() const;
-    int getPageFaults() const;
+    long getPageHits() const;
+    long getPageFaults() const;
 
     int getSize() const;
 
-    void saveValue(int index, int value);
+    void setValue(int index, int value);
 
 private:
     // Atributos que representan las cuatro páginas
@@ -42,18 +42,20 @@ private:
     std::string filePath;
 
     // Contadores para page hits y page faults
-    int pageHits;
-    int pageFaults;
+    long pageHits;
+    long pageFaults;
 
     // Método privado para cargar una página desde el disco
     void loadPage(int pageIndex);
+    void savePage(Page* page);
 
     // Método privado para encontrar un slot vacío o reemplazable en el vector de páginas
     Page*& findEmptyOrReplaceableSlot();
 
-    int numPages;
+    int size;
 
     friend void swap(PagedArray& arr, int i, int j);
+
 };
 
 void swap(PagedArray& arr, int i, int j);

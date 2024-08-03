@@ -26,7 +26,7 @@ void generateFile(const std::string& filePath, size_t sizeInBytes) {
 int main(int argc, char* argv[]) {
     // Verifica que el número de argumentos sea correcto
     if (argc != 5) {
-        std::cerr << "Uso: generator --size <SIZE> --output <OUTPUT FILE PATH>\n";
+        std::cerr << "Uso: generator -size <SIZE> -output <OUTPUT FILE PATH>\n";
         return 1;
     }
 
@@ -38,8 +38,8 @@ int main(int argc, char* argv[]) {
     size_t fileSizeInBytes;
 
     // Verifica que los flags sean correctos
-    if (sizeFlag != "--size" || outputFlag != "--output") {
-        std::cerr << "Uso: generator --size <SIZE> --output <OUTPUT FILE PATH>\n";
+    if (sizeFlag != "-size" || outputFlag != "-output") {
+        std::cerr << "Uso: generator -size <SIZE> -output <OUTPUT FILE PATH>\n";
         return 1;
     }
 

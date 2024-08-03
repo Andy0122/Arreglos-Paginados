@@ -32,11 +32,11 @@ void insertionSort(PagedArray& arr, int n) {
         int j = i - 1;
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
-            arr.saveValue(j + 1, arr[j]);
+            arr.setValue(j + 1, arr[j]);
             --j;
         }
         arr[j + 1] = key;
-        arr.saveValue(j + 1, key);
+        arr.setValue(j + 1, key);
     }
 }
 

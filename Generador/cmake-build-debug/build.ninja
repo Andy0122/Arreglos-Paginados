@@ -41,35 +41,35 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/andy/CLionProjects/Tarea1Datos2/Generador/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target generador
+# Object build statements for EXECUTABLE target generator
 
 
 #############################################
-# Order-only phony target for generador
+# Order-only phony target for generator
 
-build cmake_object_order_depends_target_generador: phony || CMakeFiles/generador.dir
+build cmake_object_order_depends_target_generator: phony || CMakeFiles/generator.dir
 
-build CMakeFiles/generador.dir/main.cpp.o: CXX_COMPILER__generador_unscanned_Debug /home/andy/CLionProjects/Tarea1Datos2/Generador/main.cpp || cmake_object_order_depends_target_generador
-  DEP_FILE = CMakeFiles/generador.dir/main.cpp.o.d
+build CMakeFiles/generator.dir/main.cpp.o: CXX_COMPILER__generator_unscanned_Debug /home/andy/CLionProjects/Tarea1Datos2/Generador/main.cpp || cmake_object_order_depends_target_generator
+  DEP_FILE = CMakeFiles/generator.dir/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/generador.dir
-  OBJECT_FILE_DIR = CMakeFiles/generador.dir
+  OBJECT_DIR = CMakeFiles/generator.dir
+  OBJECT_FILE_DIR = CMakeFiles/generator.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target generador
+# Link build statements for EXECUTABLE target generator
 
 
 #############################################
-# Link the executable generador
+# Link the executable generator
 
-build generador: CXX_EXECUTABLE_LINKER__generador_Debug CMakeFiles/generador.dir/main.cpp.o
+build generator: CXX_EXECUTABLE_LINKER__generator_Debug CMakeFiles/generator.dir/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/generador.dir
+  OBJECT_DIR = CMakeFiles/generator.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = generador
-  TARGET_PDB = generador.dbg
+  TARGET_FILE = generator
+  TARGET_PDB = generator.dbg
 
 
 #############################################
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/andy/CLionProjects/Tarea1Datos2/Generador/cmake-build-debug
 
-build all: phony generador
+build all: phony generator
 
 # =============================================================================
 # Built-in targets
